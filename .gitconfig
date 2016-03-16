@@ -1,6 +1,6 @@
 [user]
-	name = Chuan-Ju Wang
-	email = jerewang@gmail.com
+	name = Chih-En Ko
+	email = lisa850728g@gmail.com
 [color]
     status = auto
     diff = auto
@@ -10,7 +10,7 @@
 [merge]
     tool = vimdiff
 [core]
-	excludesfile = /Users/jerewang/.gitignore_global
+	excludesfile = /home/u10316011/.gitignore_global
 [alias]
     bh = branch
     st = status
