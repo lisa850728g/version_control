@@ -21,7 +21,7 @@ alias ls='ls -FNp --color=auto --time-style=long-iso'
 alias less='less -FRSXi'
 alias rm=_rm
 alias rrm='/bin/rm -i'
-alias utcs='u10316011@linux1.cs.utaipei.edu.tw'
+alias utcs='ssh u10316011@linux1.cs.utaipei.edu.tw'
 ###################################
 ## Local functions and commands
 ###################################
@@ -58,7 +58,7 @@ if [ "$PS1" ]; then
             PROMPT_COMMAND=/etc/sysconfig/bash-prompt-xterm
         else
             #PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"'
-            PROMPT_COMMAND='echo -ne "\033]0;${USER}@MacBook:${PWD/#$HOME/~}"; echo -ne "\007"'
+            PROMPT_COMMAND='echo -ne "\033]0;${USER}@PC:${PWD/#$HOME/~}"; echo -ne "\007"'
         fi
         ;;
         screen)
@@ -66,7 +66,7 @@ if [ "$PS1" ]; then
             PROMPT_COMMAND=/etc/sysconfig/bash-prompt-screen
         else
             #PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\033\\"'
-            PROMPT_COMMAND='echo -ne "\033_${USER}@MacBook:${PWD/#$HOME/~}"; echo -ne "\033\\"'
+            PROMPT_COMMAND='echo -ne "\033_${USER}@PC:${PWD/#$HOME/~}"; echo -ne "\033\\"'
         fi
         ;;
         *)
