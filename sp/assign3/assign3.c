@@ -17,7 +17,7 @@ int main(){
         }else
             use[i] = in_number;
     }
-    matrix = (int**)malloc(sizeof(int)*use[0]);
+    matrix = (int**)malloc(sizeof(int*)*use[0]);
     for(i = 0; i < use[0]; i++)
         matrix[i] = (int*)malloc(sizeof(int)*use[0]);
 
@@ -37,15 +37,9 @@ void print_search_results (int** matrix, int x1, int y1, int x2, int y2){
     int calculate[10] = {0};
     int p,q,r;
 
-    r = 0;
     for(p = y1; p <= y2; p++){
-        for(q = x1; q <= x2; q++){
-            printf("%d",*(*(matrix+p)+q));
+        for(q = x1; q <= x2; q++)
             calculate[*(*(matrix+p)+q)] ++;
-            r++;
-            if(r % 6 == 0)
-                printf("\n");
-        }
     }
     
     for(r = 1; r < 10; r++){
